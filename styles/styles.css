@@ -6,6 +6,9 @@
   --social-color: #505f79;
   --desc-color: #344563;
   --body-bg-color: #e5e5e5;
+  --card-role-color: #7a869a;
+  --card-tag-bg-color: #ebebff;
+  --card-border-color: #dfe1e6;
   --logo-ft-weight: 700;
   --logo-l-height: 1.25rem;
   --logo-ft-size: 1.125rem;
@@ -22,6 +25,21 @@
   --social-height: 1.248rem;
   --hamburger-icon-width: 1.125rem;
   --hamburger-icon-height: 0.75rem;
+  --card-title-ft-size: 2rem;
+  --card-title-l-height: 2.75rem;
+  --card-title-ft-weight: 700;
+  --card-client-ft-size: 0.813rem;
+  --card-client-l-height: 1rem;
+  --card-client-ft-weight: 600;
+  --card-desc-ft-size: 0.938rem;
+  --card-desc-l-height: 1.5rem;
+  --card-desc-ft-weight: 400;
+  --card-tag-ft-size: 0.75rem;
+  --card-tag-l-height: 1rem;
+  --card-tag-ft-weight: 500;
+  --card-btn-ft-size: 1.063rem;
+  --card-btn-l-height: 1.5rem;
+  --card-btn-ft-weight: 500;
 }
 
 * {
@@ -58,6 +76,7 @@ header a {
   width: var(--hamburger-icon-width);
   height: var(--hamburger-icon-height);
 }
+
 
 /* Hero section */
 #hero {
@@ -116,4 +135,102 @@ ul li a img {
   height: var(--social-height);
   color: var(--social-color);
   margin-right: 1.25rem;
+}
+
+/* Work section */
+#works {
+  padding: 7.125rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.card {
+  margin-bottom: 5.5rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: white;
+  border: 1px solid var(--card-border-color);
+  border-radius: 1rem;
+}
+
+.card img {
+  margin-bottom: 0.75rem;
+}
+
+.card-content h1 {
+  font-size: var(--card-title-ft-size);
+  font-weight: var(--card-title-ft-weight);
+  color: var(--name-color);
+  line-height: var(--card-title-l-height);
+}
+
+.card-content .info {
+  display: flex;
+  align-items: center;
+}
+
+.client,
+.role,
+.year,
+span {
+  margin-right: 0.75rem;
+}
+
+.card-content h2 {
+  font-size: var(--card-client-ft-size);
+  font-weight: var(--card-client-ft-weight);
+  line-height: var(--card-client-l-height);
+  color: var(--desc-color);
+  text-transform: uppercase;
+}
+
+.role,
+.year,
+span {
+  color: var(--card-role-color);
+}
+
+.card-content .info span {
+  font-size: 1.875rem;
+}
+
+.card-content .card-desc {
+  color: var(--desc-color);
+  font-size: var(--card-desc-ft-size);
+  font-weight: var(--card-desc-ft-weight);
+  line-height: var(--card-desc-l-height);
+  margin-bottom: 0.75rem;
+}
+
+.card-content ul {
+  padding: 0;
+  display: flex;
+}
+
+.card-content li {
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--card-tag-bg-color);
+  border-radius: 0.5rem;
+  font-size: var(--card-tag-ft-size);
+  color: var(--logo-color);
+  font-weight: var(--card-tag-ft-weight);
+  line-height: var(--card-tag-l-height);
+}
+
+.card-content button {
+  background-color: white;
+  padding: 0.75rem;
+  border: 1px solid var(--logo-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1.75rem;
+  box-sizing: border-box;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: var(--logo-color);
+  font-size: var(--card-btn-ft-size);
+  font-weight: var(--card-btn-ft-weight);
+  line-height: var(--card-btn-l-height);
 }
