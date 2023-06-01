@@ -24,7 +24,7 @@
 
 # Portfolio
 
-> Portfolio Microverse Project 1
+> Portfolio Microverse Project 1 | Creation of a Mobile-first Portfolio website
 
 
 ## Built With
@@ -129,8 +129,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[Mobile version]**
 - [ ] **[Contact form]**
 - [ ] **[Desktop version]**
@@ -158,4 +156,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
