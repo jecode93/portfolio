@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #396df2;
+  --name-color: #172b4d;
+  --btn-connect-color: #7f8cff;
+  --logo-color: #6070ff;
+  --social-color: #505f79;
+  --desc-color: #344563;
+  --body-bg-color: #e5e5e5;
+  --logo-ft-weight: 700;
+  --logo-l-height: 1.25rem;
+  --logo-ft-size: 1.125rem;
+  --name-ft-size: 2.5rem;
+  --name-ft-weight: 700;
+  --name-l-height: 3.25rem;
+  --desc-ft-size: 1rem;
+  --desc-l-height: 1.5rem;
+  --desc-ft-weight: 400;
+  --btn-connect-ft-size: 1rem;
+  --btn-connect-l-height: 1.5rem;
+  --btn-connect-ft-weight: 500;
+  --social-width: 1.249rem;
+  --social-height: 1.248rem;
+  --hamburger-icon-width: 1.125rem;
+  --hamburger-icon-height: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: Poppins, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 1.5rem;
+  height: 3rem;
+}
+
+/* Header text logo */
+header a {
+  color: var(--logo-color);
+  font-size: var(--logo-ft-size);
+  line-height: var(--logo-l-height);
+  text-decoration: none;
+  font-weight: var(--logo-ft-weight);
+}
+
+/* Header humburger icon */
+.hamburger-icon {
+  width: var(--hamburger-icon-width);
+  height: var(--hamburger-icon-height);
+}
+
+/* Hero section */
+#hero {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  padding: 0 1.5rem;
+  height: 37.75rem;
+  border-radius: 0 0 0 5rem;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Hero name */
+.name {
+  padding-top: 7.125rem;
+  margin-bottom: 0.75rem;
+  color: var(--name-color);
+  font-size: var(--name-ft-size);
+  font-weight: var(--name-ft-weight);
+  line-height: var(--name-l-height);
+}
+
+/* Hero description */
+.desc {
+  margin-bottom: 0.75rem;
+  color: var(--desc-color);
+  font-size: var(--desc-ft-size);
+  font-weight: var(--desc-ft-weight);
+  line-height: var(--desc-l-height);
+}
+
+/* Lest's connect */
+.btn-connect {
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  color: var(--btn-connect-color);
+  font-size: var(--btn-connect-ft-size);
+  font-weight: var(--btn-connect-ft-weight);
+  line-height: var(--btn-connect-l-height);
+}
+
+/* Social hero icon */
+#hero ul {
+  display: flex;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a img {
+  width: var(--social-width);
+  height: var(--social-height);
+  color: var(--social-color);
+  margin-right: 1.25rem;
+}
