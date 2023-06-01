@@ -6,6 +6,9 @@
   --social-color: #505f79;
   --desc-color: #344563;
   --body-bg-color: #e5e5e5;
+  --logo-ft-weight: 700;
+  --logo-l-height: 1.25rem;
+  --logo-ft-size: 1.125rem;
   --name-ft-size: 2.5rem;
   --name-ft-weight: 700;
   --name-l-height: 3.25rem;
@@ -42,8 +45,12 @@ header {
 }
 
 /* Header text logo */
-header h2 {
+header a {
   color: var(--logo-color);
+  font-size: var(--logo-ft-size);
+  line-height: var(--logo-l-height);
+  text-decoration: none;
+  font-weight: var(--logo-ft-weight);
 }
 
 /* Header humburger icon */
@@ -95,7 +102,16 @@ header h2 {
 }
 
 /* Social hero icon */
-.icons a img {
+#hero ul {
+  display: flex;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a img {
   width: var(--social-width);
   height: var(--social-height);
   color: var(--social-color);
