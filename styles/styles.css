@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #396DF2;
-  --name-color: #172B4D;
-  --logo-color: #6070FF;
-  --btn-connect-color: #7F8CFF;
-  --social-color: #505F79;
+  --primary-color: #396df2;
+  --name-color: #172b4d;
+  --btn-connect-color: #7f8cff;
+  --logo-color: #6070ff;
+  --social-color: #505f79;
   --desc-color: #344563;
-  --body-bg-color: #E5E5E5;
+  --body-bg-color: #e5e5e5;
   --name-ft-size: 2.5rem;
   --name-ft-weight: 700;
   --name-l-height: 3.25rem;
