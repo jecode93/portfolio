@@ -66,6 +66,14 @@
 - **[Pure css]**
 
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Website not deployed yet](https://google.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -100,7 +108,13 @@ To run tests, run the following command:
 - Modify the name in the h1 tag or the description
 - Refresh you browser to see the changes
 
+### Deployment
 
+You can deploy this project using:
+
+- [Netlify](https://www.netlify.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors
 
