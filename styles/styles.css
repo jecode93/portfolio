@@ -166,6 +166,11 @@ ul li a img {
   background-color: white;
   border: 1px solid var(--card-border-color);
   border-radius: 1rem;
+  text-align: center;
+}
+
+.card-content {
+  text-align: start;
 }
 
 .card img {
