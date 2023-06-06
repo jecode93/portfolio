@@ -346,3 +346,83 @@ hr {
   margin-bottom: 0.75rem;
   border-radius: 0.5rem;
 }
+
+
+/* Contact form */
+#contact-form {
+ padding: 1.5rem;
+ margin-top: -4rem;
+ background-color: var(--btn-hover-color);
+ background-image: url(/images/contact-bg.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position-x: right;
+ border-radius: 5rem 0 0 0;
+}
+.contact-content {
+ display: flex;
+ flex-flow: column;
+}
+.contact-head {
+ text-align: center;
+ color: var(--white);
+}
+.contact-head h1 {
+ font-size: var(--contact-title-ft-size);
+ font-weight: var(--contact-title-ft-weight);
+ line-height: var(--contact-title-line-height);
+ padding-top: 103px;
+ padding-bottom: 12px;
+}
+.contact-head p {
+ font-size: var(--contact-desc-p-ft-size);
+ font-weight: var(--contact-desc-p-ft-weight);
+ line-height: var(--contact-desc-p-line-height);
+ padding-bottom: 52px;
+}
+.form input[type=text],
+.form input[type=email],
+.form textarea {
+ border: none;
+ border-radius: 0.5rem;
+ width: 100%;
+}
+.form input[type=text],
+.form input[type=email],
+.form textarea {
+ margin-bottom: 1.25rem;
+ padding: 1rem;
+}
+.form input[type=text],
+.form input[type=email] {
+ font-size: 1.063rem;
+ line-height: 1.25rem;
+ color: var(--name-color);
+}
+.form input[type=text]::placeholder,
+.form input[type=email]::placeholder {
+ font-size: 1.063rem;
+ line-height: 1.25rem;
+ color: var(--name-color);
+}
+.form textarea {
+ font-size: 0.938rem;
+ line-height: 1.5rem;
+ color: var(--textarea-color);
+ font-family: Poppins, sans-serif;
+}
+.form textarea::placeholder {
+ font-size: 0.938rem;
+ line-height: 1.5rem;
+ color: var(--textarea-color);
+}
+.form button {
+ border: none;
+ padding: 0.75rem 1rem;
+ border-radius: 0.5rem;
+ font-size: 1.063rem;
+ line-height: 1.5rem;
+ text-align: center;
+ font-weight: 500;
+ color: var(--btn-hover-color);
+}
