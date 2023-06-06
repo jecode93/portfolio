@@ -269,6 +269,17 @@ span {
   line-height: var(--card-btn-l-height);
 }
 
+.form button {
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--btn-hover-color);
+}
+
 .card-content button:hover {
   color: var(--white);
   background-color: var(--btn-hover-color);
@@ -384,57 +395,56 @@ hr {
   padding-bottom: 52px;
 }
 
-.form input[type=text],
-.form input[type=email],
+.form input[type=text] {
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  color: var(--name-color);
+}
+
+.form input[type=email] {
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  color: var(--name-color);
+}
+
 .form textarea {
   border: none;
   border-radius: 0.5rem;
   width: 100%;
-}
-
-.form input[type=text],
-.form input[type=email],
-.form textarea {
   margin-bottom: 1.25rem;
   padding: 1rem;
-}
-
-.form input[type=text],
-.form input[type=email] {
-  font-size: 1.063rem;
-  line-height: 1.25rem;
-  color: var(--name-color);
-}
-
-.form input[type=text]::placeholder,
-.form input[type=email]::placeholder {
-  font-size: 1.063rem;
-  line-height: 1.25rem;
-  color: var(--name-color);
-}
-
-.form textarea {
   font-size: 0.938rem;
   line-height: 1.5rem;
   color: var(--textarea-color);
   font-family: Poppins, sans-serif;
 }
 
+.form input[type=text]::placeholder {
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  color: var(--name-color);
+}
+
+.form input[type=email]::placeholder {
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  color: var(--name-color);
+}
+
 .form textarea::placeholder {
   font-size: 0.938rem;
   line-height: 1.5rem;
   color: var(--textarea-color);
-}
-
-.form button {
-  border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 1.063rem;
-  line-height: 1.5rem;
-  text-align: center;
-  font-weight: 500;
-  color: var(--btn-hover-color);
 }
 
 .form button:hover {
