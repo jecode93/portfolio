@@ -68,12 +68,6 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Website not deployed yet](https://google.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -118,11 +112,21 @@ You can deploy this project using:
 
 ## Authors
 
+👤 **Author 1**
+
 👤 **Jean Emmanuel Cadet**
 
 - GitHub: [@jecode93](https://github.com/jecode93)
 - Twitter: [@jecode93](https://twitter.com/jecode93)
 - LinkedIn: [jean-emmanuel-cadet](https://www.linkedin.com/in/jean-emmanuel-cadet/)
+
+
+👤 **Author 2**
+
+👤 **Ronald Mjonono**
+- GitHub: [@mj-e-boc](https://github.com/mj-e-boc)
+- Twitter: [@mjononoronald](https://twitter.com/Mjononoronald)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ronald-mjonono-86365988/)
 
 
 <!-- FUTURE FEATURES -->
