@@ -5,7 +5,7 @@
   --logo-color: #6070ff;
   --social-color: #505f79;
   --desc-color: #344563;
-  --body-bg-color: #e5e5e5;
+  --body-bg-color: #f4f5f7;
   --card-role-color: #7a869a;
   --card-tag-bg-color: #ebebff;
   --card-border-color: #dfe1e6;
@@ -13,6 +13,7 @@
   --cat-i-color: #acb7c3;
   --btn-hover-color: #6070ff;
   --textarea-color: #b3bac5;
+  --button-active-color: #2230d2;
   --white: white;
   --logo-ft-weight: 700;
   --logo-l-height: 1.25rem;
@@ -289,6 +290,11 @@ span {
   background-color: var(--btn-hover-color);
 }
 
+.card-content button:active {
+  color: var(--white);
+  background-color: var(--button-active-color);
+}
+
 /* About MySelf Section */
 #about-section {
   margin-top: -5rem;
@@ -313,6 +319,11 @@ span {
 .about-content button:hover {
   color: var(--white);
   background-color: var(--btn-hover-color);
+}
+
+.about-content button:active {
+  color: var(--white);
+  background-color: var(--button-active-color);
 }
 
 .about-content .btn-connect {
@@ -430,7 +441,7 @@ hr {
   font-size: 0.938rem;
   line-height: 1.5rem;
   color: var(--textarea-color);
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .form input[type=text]::placeholder {
@@ -456,6 +467,11 @@ hr {
   background-color: var(--btn-hover-color);
   border: 1px solid var(--white);
   cursor: pointer;
+}
+
+.form button:active {
+  color: var(--white);
+  background-color: var(--button-active-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -527,6 +543,11 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     height: 31rem;
     align-items: center;
+  }
+
+  .card:hover {
+    border: 1px solid #a7aeff;
+    box-shadow: 1px 5px 50px #a7aeff;
   }
 
   .card-content {
