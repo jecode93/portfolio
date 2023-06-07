@@ -47,11 +47,11 @@
   --card-btn-ft-weight: 500;
   --cat-h2-ft-size: 1.25rem;
   --cat-h2-l-height: 1.5rem;
-  --contact-title-ft-size: 40px;
-  --contact-title-line-height: 52px;
+  --contact-title-ft-size: 2.5rem;
+  --contact-title-line-height: 3.25rem;
   --contact-title-ft-weight: 700;
-  --contact-desc-p-ft-size: 20px;
-  --contact-desc-p-line-height: 28px;
+  --contact-desc-p-ft-size: 1.25rem;
+  --contact-desc-p-line-height: 1.75rem;
   --contact-desc-p-ft-weight: 400;
 }
 
@@ -388,15 +388,15 @@ hr {
   font-size: var(--contact-title-ft-size);
   font-weight: var(--contact-title-ft-weight);
   line-height: var(--contact-title-line-height);
-  padding-top: 103px;
-  padding-bottom: 12px;
+  padding-top: 6.438rem;
+  padding-bottom: 0.75rem;
 }
 
 .contact-head p {
   font-size: var(--contact-desc-p-ft-size);
   font-weight: var(--contact-desc-p-ft-weight);
   line-height: var(--contact-desc-p-line-height);
-  padding-bottom: 52px;
+  padding-bottom: 3.25rem;
 }
 
 .form input[type=text] {
@@ -464,7 +464,7 @@ hr {
   }
 
   header {
-    padding: 2rem 155px 0 155px;
+    padding: 2rem 9.688rem 0 9.688rem;
   }
 
   header ul {
@@ -483,7 +483,7 @@ hr {
   #hero {
     background-color: white;
     padding: 0 1.5rem;
-    height: 700px;
+    height: 43.75rem;
     border-radius: 0 0 0 5rem;
     background-image: url("../images/desktop/desktop-bg.png");
     background-size: contain;
@@ -525,7 +525,7 @@ hr {
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 496px;
+    height: 31rem;
     align-items: center;
   }
 
