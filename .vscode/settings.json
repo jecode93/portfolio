@@ -2,5 +2,6 @@
 	"editor.tabSize": 2,
 	"editor.formatOnSave": false,
 	"editor.formatOnSaveMode": "file",
-	"liveServer.settings.port": 5501
+	"liveServer.settings.port": 5501,
+	"editor.formatOnPaste": false
 }

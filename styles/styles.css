@@ -495,10 +495,12 @@ hr {
   header .desktop-nav li {
     margin-left: 2rem;
   }
-    
+
   /* The animation code */
   @keyframes logoRotate {
-    100% {transform: rotate(360deg)}
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   header .logo {
@@ -509,9 +511,23 @@ hr {
   }
 
   @keyframes menuhover {
-    0%{border-bottom: 2px solid var(--logo-color);}
-    100%{border-bottom: 2px solid var(--logo-color);}
+    0% {
+      border-bottom: 2px solid var(--logo-color);
+    }
+
+    100% {
+      border-bottom: 2px solid var(--logo-color);
+    }
   }
+
+  .desktop-menu {
+    font-size: 0.938rem;
+    font-weight: 500;
+    line-height: 20;
+    color: #344563;
+    text-align: center;
+  }
+
   .desktop-menu:hover {
     animation-duration: 1s;
     animation-name: menuhover;
@@ -550,14 +566,6 @@ hr {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .desktop-menu {
-    font-size: 0.938rem;
-    font-weight: 500;
-    line-height: 20;
-    color: #344563;
-    text-align: center;
   }
 
   .card {
