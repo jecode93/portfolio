@@ -74,10 +74,11 @@ header {
   background-color: white;
   padding: 0 1.5rem;
   height: 3rem;
+  position: relative;
 }
 
 /* Header text logo */
-header a {
+header .logo {
   color: var(--logo-color);
   font-size: var(--logo-ft-size);
   line-height: var(--logo-l-height);
@@ -89,6 +90,48 @@ header a {
 .hamburger-icon {
   width: var(--hamburger-icon-width);
   height: var(--hamburger-icon-height);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.glass {
+  background-color: var(--btn-hover-color);
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+ul li {
+  list-style: none;
+}
+
+.mobile-menu li {
+  margin: 40px 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mobile-menu a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
+  left: 0;
 }
 
 header .desktop-nav {
@@ -152,10 +195,6 @@ header .desktop-nav {
 #hero ul {
   display: flex;
   padding: 0;
-}
-
-ul li {
-  list-style: none;
 }
 
 ul li a img {
@@ -496,6 +535,14 @@ hr {
     margin-left: 2rem;
   }
 
+  .desktop-nav a {
+    text-decoration: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
   /* The animation code */
   @keyframes logoRotate {
     100% {
@@ -629,7 +676,6 @@ hr {
 
   #contact-form {
     background-image: url("../images/desktop/desktop-contact-bg.png");
-    border-radius: none;
   }
 
   .contact-content {
