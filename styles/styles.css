@@ -74,10 +74,11 @@ header {
   background-color: white;
   padding: 0 1.5rem;
   height: 3rem;
+  position: relative;
 }
 
 /* Header text logo */
-header a {
+header .logo {
   color: var(--logo-color);
   font-size: var(--logo-ft-size);
   line-height: var(--logo-l-height);
@@ -90,6 +91,7 @@ header a {
   width: var(--hamburger-icon-width);
   height: var(--hamburger-icon-height);
 }
+
 
 header .desktop-nav {
   display: none;
@@ -494,6 +496,14 @@ hr {
 
   header .desktop-nav li {
     margin-left: 2rem;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   /* The animation code */
