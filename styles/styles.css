@@ -118,6 +118,10 @@ header .logo {
   backdrop-filter: blur(10px);
 }
 
+ul li {
+  list-style: none;
+}
+
 .mobile-menu li {
   margin: 20px 0;
   font-size: 1.5rem;
@@ -192,10 +196,6 @@ header .desktop-nav {
 #hero ul {
   display: flex;
   padding: 0;
-}
-
-ul li {
-  list-style: none;
 }
 
 ul li a img {
