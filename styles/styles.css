@@ -191,7 +191,19 @@ header .desktop-nav {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0
+  padding: 0;
+}
+
+.card-content li {
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--card-tag-bg-color);
+  border-radius: 0.5rem;
+  font-size: var(--card-tag-ft-size);
+  color: var(--logo-color);
+  font-weight: var(--card-tag-ft-weight);
+  line-height: var(--card-tag-l-height);
 }
 
 .modal-header ul li {
@@ -204,6 +216,7 @@ header .desktop-nav {
   padding: 0;
   margin-bottom: 2.25rem;
 }
+
 
 #hero ul {
   display: flex;
@@ -284,18 +297,6 @@ span {
   font-weight: var(--card-desc-ft-weight);
   line-height: var(--card-desc-l-height);
   margin-bottom: 0.75rem;
-}
-
-.card-content li {
-  margin-right: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.25rem 0.75rem;
-  background-color: var(--card-tag-bg-color);
-  border-radius: 0.5rem;
-  font-size: var(--card-tag-ft-size);
-  color: var(--logo-color);
-  font-weight: var(--card-tag-ft-weight);
-  line-height: var(--card-tag-l-height);
 }
 
 .card-content button {
@@ -407,7 +408,7 @@ hr {
 }
 
 .modal-body a i {
-  margin-left: .3rem;
+  margin-left: 0.3rem;
 }
 
 .techno .category .categories i {
@@ -565,11 +566,6 @@ hr {
   right: 3%;
 }
 
-.modal-body img {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -578,13 +574,6 @@ hr {
 .modal-header h1 {
   color: var(--name-color);
   margin-bottom: -1.5rem;
-}
-
-.modal-header ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0
 }
 
 .modal-header ul li h6 {
@@ -687,6 +676,18 @@ hr {
 
   header .desktop-nav {
     display: block;
+  }
+
+  .modal-body li {
+    margin-right: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--card-tag-bg-color);
+    border-radius: 0.5rem;
+    font-size: var(--card-tag-ft-size);
+    color: var(--logo-color);
+    font-weight: var(--card-tag-ft-weight);
+    line-height: var(--card-tag-l-height);
   }
 
   header .desktop-nav li {
@@ -815,21 +816,16 @@ hr {
     line-height: 3.75rem;
   }
 
+  .modal-header ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0
+  }
+
   .techno .category ul {
     display: flex;
     flex-direction: row;
-  }
-
-  .modal-body li {
-    margin-right: 0.5rem;
-    margin-bottom: 1.5rem;
-    padding: 0.25rem 0.75rem;
-    background-color: var(--card-tag-bg-color);
-    border-radius: 0.5rem;
-    font-size: var(--card-tag-ft-size);
-    color: var(--logo-color);
-    font-weight: var(--card-tag-ft-weight);
-    line-height: var(--card-tag-l-height);
   }
 
   .modal-body img {
