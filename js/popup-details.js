@@ -118,9 +118,7 @@ function modalDynamic() {
             <div class="row">
               <div class="col-md-7 mt-5 desc">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essent</p>
+                  industry's standard dummy text ever since the 1500s. </p>
               </div>
               <div class="col-md-5 mt-5">
                 <ul class="tag">
@@ -129,9 +127,11 @@ function modalDynamic() {
                   <li>JavaScript</li>
                 </ul>
                 <div class="modal-hr"></div>
-                <a href="#" class="btn btn-outline-primary btn-sm">See live <i class="bi bi-box-arrow-up-right"></i></a>
-                <a href="#" class="btn btn-outline-primary btn-sm">See source <i class="bi bi-github"></i></a>
-              </div>
+								<div class="modal-button">
+                	<a href="#" class="btn btn-outline-primary btn-sm">See live <i class="bi bi-box-arrow-up-right"></i></a>
+                	<a href="#" class="btn btn-outline-primary btn-sm">See source <i class="bi bi-github"></i></a>
+								</div>              
+							</div>
             </div>
           </div>
         </div>
