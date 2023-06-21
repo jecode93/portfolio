@@ -134,7 +134,7 @@ function modalDynamic() {
 `;
   modalDialog.appendChild(div);
 		});
-	}
+  }
 }
 
 
