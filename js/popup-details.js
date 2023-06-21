@@ -81,7 +81,6 @@ function addWorkSection() {
 
 addWorkSection();
 
-
 const modal = document.querySelector('.modal-dialog');
 const open = document.querySelectorAll('.open');
 const closeModal = document.getElementsByClassName('popup-close');
@@ -136,7 +135,6 @@ function modalDynamic() {
 		});
   }
 }
-
 
 modalDynamic();
 
