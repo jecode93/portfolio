@@ -1,6 +1,7 @@
 // name, description, 
 //featured image, technologies, link to live version, link to source.
 
+
 const works = [
 	{
 		id: 0,
@@ -74,10 +75,82 @@ function addWorkSection() {
               <li>${work.tags[1]}</li>
               <li>${work.tags[2]}</li>
             </ul>
-            <a href="#"><button>See project</button></a>
+						<div id="open">
+							<a class="open"href="#"><button>See project</button></a>
+						</div>
           </div>`;
 		workSection.appendChild(div);
 	})
 }
 
 addWorkSection();
+
+
+const modal = document.querySelector('.modal-dialog');
+const open = document.querySelectorAll('.open');
+const closeModal = document.getElementsByClassName('popup-close');
+
+function modalDynamic() {
+	const modalDialog = document.getElementById('modal-dialog')
+	for (let i = 0; i < open.length; i += 1) {
+		open[i].addEventListener('click', () => {
+			const div = document.createElement('div');
+			div.innerHTML = `
+        <div class="overlay"></div>
+				<div class="modal-content">
+          <div class="modal-header">
+            <div class="all-remain">
+              <h1 class="modal-title">${works[i].name}</h1>
+              <ul class="list-inline">
+                <li>
+                  <h6>${works[i].company}</h6>
+                </li>
+                <li class="list-inline-itemp">•</li>
+                <li class="list-inline-item">${works[i].role}</li>
+                <li class="list-inline-itemp">•</li>
+                <li class="list-inline-item">${works[i].year}</li>
+              </ul>
+            </div>
+            <button class="modal-close" onclick = "closePopup()"><i class="bi bi-x-lg"> </i></button>
+          </div>
+          <div class="modal-body">
+            <img src="${works[i].image}" class="img-fluid rounded-start" alt="${works[i].image_alt}">
+            <div class="row">
+              <div class="col-md-7 mt-5 desc">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essent</p>
+              </div>
+              <div class="col-md-5 mt-5">
+                <ul class="tag">
+                  <li>Html</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="modal-hr"></div>
+                <a href="#" class="btn btn-outline-primary btn-sm">See live <i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="btn btn-outline-primary btn-sm">See source <i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+`;
+			modalDialog.appendChild(div);
+		});
+	}
+}
+
+
+modalDynamic();
+
+for (let i = 0; i < open.length; i++) {
+	open[i].addEventListener('click', () => {
+		modal.classList.remove('isHidden');
+	});
+};
+
+// Close popup
+function closePopup() {
+	modal.classList.toggle('isHidden');
+};
