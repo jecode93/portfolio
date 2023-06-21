@@ -847,7 +847,6 @@ hr {
   .modal-content {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
     position: fixed;
     top: 3%;
     right: 3%;
@@ -893,6 +892,11 @@ hr {
 
   .modal-body p {
     font-size: 1rem;
-}
+  }
+
+  .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
 
 }
