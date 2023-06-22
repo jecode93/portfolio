@@ -678,14 +678,12 @@ hr {
   color: white;
   background-color: green;
   font-size: 1em;
-  margin-left: 406px;
-  margin-right: 406px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   padding: 10px;
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0 rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 768px) {
