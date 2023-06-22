@@ -151,3 +151,5 @@ for (let i = 0; i < open.length; i += 1) {
 function closePopup() {
   modal.classList.toggle('isHidden');
 }
+
+closePopup();
