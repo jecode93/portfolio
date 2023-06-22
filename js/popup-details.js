@@ -83,6 +83,7 @@ addWorkSection();
 
 const modal = document.querySelector('.modal-dialog');
 const open = document.querySelectorAll('.open');
+const card = document.querySelectorAll('.card');
 const closeModal = document.getElementsByClassName('popup-close');
 
 function modalDynamic() {
@@ -140,6 +141,9 @@ modalDynamic();
 
 for (let i = 0; i < open.length; i += 1) {
 	open[i].addEventListener('click', () => {
+		modal.classList.remove('isHidden');
+	});
+  card[i].addEventListener('click',() => {
 		modal.classList.remove('isHidden');
 	});
 }
