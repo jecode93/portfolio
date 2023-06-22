@@ -10,7 +10,7 @@ function checkEmail() {
   if (email.toString().toLowerCase() !== email) {
     return false;
   }
-    return true;
+  return true;
 }
 
 // Remove error after 5 seconds
@@ -25,7 +25,7 @@ function removeError() {
 // Function to validate the form
 function validateForm() {
   const name = document.getElementById('fullname');
-  const email = document.getElementById('email')
+  const email = document.getElementById('email');
   const message = document.getElementById('message');
 
   if (name.value === '' || email.value === '' || message.value === '') {
@@ -33,14 +33,14 @@ function validateForm() {
     renderElement.innerHTML = 'All fields are required';
     removeError();
     return false;
- }
+  }
 
-	if (!checkEmail()) {
+  if (!checkEmail()) {
     renderElement.classList.add('error');
     renderElement.innerHTML = 'Email must be lowercase';
     removeError();
     return false;
- }
+  }
 
   return true;
 }
