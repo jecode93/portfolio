@@ -111,11 +111,11 @@ function modalDynamic() {
           <div class='modal-body'>
             <img src='${works[i].image}' class='img-fluid rounded-start' alt='${works[i].image_alt}'>
             <div class='row'>
-              <div class='col-md-7 mt-5 desc'>
+              <div class='desc'>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   industry's standard dummy text ever since the 1500s. </p>
               </div>
-              <div class='col-md-5 mt-5'>
+              <div class=''>
                 <ul class='tag'>
                   <li>Html</li>
                   <li>CSS</li>
