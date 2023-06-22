@@ -131,12 +131,14 @@
               that needs coding. I'd love to help with it!</p>
           </div>
           <div class="form">
-            <form action="https://formspree.io/f/xgebjlkk" method="post">
+            <form class="form-section" action="https://formspree.io/f/xgebjlkk" method="post">
               <input type="text" name="fullname" id="fullname" placeholder="Lorem Ipsum" maxlength="30" required>
               <input type="email" name="email" id="email" placeholder="loremipsum@gmail.com" required>
               <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message" maxlength="500"
                 required></textarea>
-              <p><button type="submit">Get in touch</button></p>
+              <p><button type="submit" class="submit">Get in touch</button></p>
+              <!-- Error -->
+              <p class="render isHidden">Error</p>
             </form>
           </div>
         </div>
@@ -146,6 +148,7 @@
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/popup-details.js"></script>
+    <script src="./js/validate-form.js"></script>
   </body>
 
 </html>
