@@ -72,11 +72,11 @@ function addWorkSection() {
           <li>${work.tags[2]}</li>
         </ul>
         <div id='open'>
-        	<a class='open'href='#'><button>See project</button></a>
+          <a class='open'href='#'><button>See project</button></a>
         </div>
       </div>`;
     workSection.appendChild(div);
-  })
+  });
 }
 
 addWorkSection();
@@ -84,7 +84,6 @@ addWorkSection();
 const modal = document.querySelector('.modal-dialog');
 const open = document.querySelectorAll('.open');
 const card = document.querySelectorAll('.card');
-const closeModal = document.getElementsByClassName('popup-close');
 
 function modalDynamic() {
   const modalDialog = document.getElementById('modal-dialog')
@@ -123,16 +122,16 @@ function modalDynamic() {
                   <li>JavaScript</li>
                 </ul>
                 <div class='modal-hr'></div>
-								<div class='modal-button'>
-                	<a href='#' class='btn btn-outline-primary btn-sm'>See live <i class='bi bi-box-arrow-up-right'></i></a>
-                	<a href='#' class='btn btn-outline-primary btn-sm'>See source <i class='bi bi-github'></i></a>
-								</div>              
-							</div>
+                <div class='modal-button'>
+                  <a href='#' class='btn btn-outline-primary btn-sm'>See live <i class='bi bi-box-arrow-up-right'></i></a>
+                  <a href='#' class='btn btn-outline-primary btn-sm'>See source <i class='bi bi-github'></i></a>
+                </div>              
+              </div>
             </div>
           </div>
         </div>
 `;
-  modalDialog.appendChild(div);
+      modalDialog.appendChild(div);
     });
   }
 }
@@ -143,7 +142,7 @@ for (let i = 0; i < open.length; i += 1) {
   open[i].addEventListener('click', () => {
     modal.classList.remove('isHidden');
   });
-  card[i].addEventListener('click',() => {
+  card[i].addEventListener('click', () => {
     modal.classList.remove('isHidden');
   });
 }
