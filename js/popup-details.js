@@ -86,7 +86,7 @@ const open = document.querySelectorAll('.open');
 const card = document.querySelectorAll('.card');
 
 function modalDynamic() {
-  const modalDialog = document.getElementById('modal-dialog')
+  const modalDialog = document.getElementById('modal-dialog');
   for (let i = 0; i < open.length; i += 1) {
     open[i].addEventListener('click', () => {
       const div = document.createElement('div');
