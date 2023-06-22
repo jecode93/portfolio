@@ -46,37 +46,37 @@ const works = [
     image: './images/work/multi-post2.svg',
     image_alt: 'Multi-Post project image',
     image_class: 'desktop-card-img-right',
-  }
-]
+  },
+];
 
 function addWorkSection() {
-	const workSection = document.getElementById('works');
-	works.forEach((work) => {
-		const div = document.createElement('div');
-		div.classList.add('card');
-		div.innerHTML = `
-					<img class='${work.image_class}' src='${work.image}' alt='${work.image_alt}'>
-          <div class='card-content'>
-            <h1>${work.name}</h1>
-            <div class='info'>
-              <h2 class='client'>${work.company}</h2>
-              <span>•</span>
-              <p class='role'>${work.role}</p>
-              <span>•</span>
-              <p class='year'>${work.year}</p>
-            </div>
-            <p class='card-desc'>${work.description}</p>
-            <ul class='tag'>
-              <li>${work.tags[0]}</li>
-              <li>${work.tags[1]}</li>
-              <li>${work.tags[2]}</li>
-            </ul>
-						<div id='open'>
-							<a class='open'href='#'><button>See project</button></a>
-						</div>
-          </div>`;
-		workSection.appendChild(div);
-	})
+  const workSection = document.getElementById('works');
+  works.forEach((work) => {
+    const div = document.createElement('div');
+    div.classList.add('card');
+    div.innerHTML = `
+    <img class='${work.image_class}' src='${work.image}' alt='${work.image_alt}'>
+    <div class='card-content'>
+    <h1>${work.name}</h1>
+    <div class='info'>
+      <h2 class='client'>${work.company}</h2>
+      <span>•</span>
+      <p class='role'>${work.role}</p>
+      <span>•</span>
+      <p class='year'>${work.year}</p>
+      </div>
+        <p class='card-desc'>${work.description}</p>
+        <ul class='tag'>
+          <li>${work.tags[0]}</li>
+          <li>${work.tags[1]}</li>
+          <li>${work.tags[2]}</li>
+        </ul>
+        <div id='open'>
+        	<a class='open'href='#'><button>See project</button></a>
+        </div>
+      </div>`;
+    workSection.appendChild(div);
+  })
 }
 
 addWorkSection();
@@ -87,16 +87,16 @@ const card = document.querySelectorAll('.card');
 const closeModal = document.getElementsByClassName('popup-close');
 
 function modalDynamic() {
-	const modalDialog = document.getElementById('modal-dialog')
+  const modalDialog = document.getElementById('modal-dialog')
   for (let i = 0; i < open.length; i += 1) {
-		open[i].addEventListener('click', () => {
-			const div = document.createElement('div');
-			div.innerHTML = `
-        <div class='overlay'></div>
-				<div class='modal-content'>
-          <div class='modal-header'>
-            <div class='all-remain'>
-              <h1 class='modal-title'>${works[i].name}</h1>
+    open[i].addEventListener('click', () => {
+      const div = document.createElement('div');
+      div.innerHTML = `
+      <div class='overlay'></div>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <div class='all-remain'>
+            <h1 class='modal-title'>${works[i].name}</h1>
               <ul class='list-inline'>
                 <li>
                   <h6>${works[i].company}</h6>
@@ -133,22 +133,22 @@ function modalDynamic() {
         </div>
 `;
   modalDialog.appendChild(div);
-		});
+    });
   }
 }
 
 modalDynamic();
 
 for (let i = 0; i < open.length; i += 1) {
-	open[i].addEventListener('click', () => {
-		modal.classList.remove('isHidden');
-	});
+  open[i].addEventListener('click', () => {
+    modal.classList.remove('isHidden');
+  });
   card[i].addEventListener('click',() => {
-		modal.classList.remove('isHidden');
-	});
+    modal.classList.remove('isHidden');
+  });
 }
 
 // Close popup
 function closePopup() {
-	modal.classList.toggle('isHidden');
+  modal.classList.toggle('isHidden');
 }
