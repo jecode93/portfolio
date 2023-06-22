@@ -661,6 +661,18 @@ hr {
   display: none;
 }
 
+.modal-body li {
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--card-tag-bg-color);
+  border-radius: 0.5rem;
+  font-size: var(--card-tag-ft-size);
+  color: var(--logo-color);
+  font-weight: var(--card-tag-ft-weight);
+  line-height: var(--card-tag-l-height);
+}
+
 @media screen and (min-width: 768px) {
   header img {
     display: none;
@@ -831,7 +843,7 @@ hr {
 
   .modal-body img {
     width: 100%;
-    height: 25%;
+    height: 60%;
     align-items: center;
   }
 
